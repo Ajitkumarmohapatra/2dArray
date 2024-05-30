@@ -1,0 +1,32 @@
+class fullyDynamic
+{
+    public static void main(String[]args)
+{
+    int arr[][];
+     System.out.println("Enter row and col of an array");
+    java.util.Scanner obj =new java.util.Scanner(System.in);
+   
+    int row=obj.nextInt();
+    int col=obj.nextInt();
+    arr=new int[row][col];
+    System.out.println("Enter "+(row*col)+ "th row of element");
+    for(int i=0;i<row;i++)
+    {
+        System.out.println(" Enter the element of"+i+" elements are");
+         for(int j=0;j<col;j++){
+        arr[i][j]=obj.nextInt();
+        }
+       
+    }
+    System.out.println("Elements are.......");
+     for(int i=0;i<row;i++)
+    {
+         for(int j=0;j<col;j++){
+
+        System.out.print(arr[i][j]+" ");
+        }
+     System.out.println();
+    }
+    
+}
+}
